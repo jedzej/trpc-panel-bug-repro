@@ -253,6 +253,7 @@ export const testRouter = t.router({
           string: z.string().optional(),
         }),
         stringMin5: z.string().min(5),
+        anyNumber: z.number(),
         numberMin10: z.number().min(10),
         stringOptional: z.string().optional(),
         enum: z.enum(["One", "Two"]),
